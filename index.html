@@ -6,22 +6,31 @@
     <title>WarsawJS Worksop</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="stylesheet" href="./main.css">
   </head>
   <body>
     <link rel="import" href="./1-mockup/index.html">
+    <link rel="import" href="./2-github-profile-card/index.html">
     <div id="container">
-      <template-pic
-        img="http://obreczarek.com/misc/woof.jpg"
-        caption="Woof!"
-        width="512"
-        height="385">
-      </template-pic>
+      <div>
+        <template-pic
+          img="http://obreczarek.com/misc/woof.jpg"
+          caption="Woof!">
+        </template-pic>
+      </div>
 
-      <template-pic
-        img="https://media.giphy.com/media/s2qXK8wAvkHTO/giphy.gif"
-        caption="Party!">
-      </template-pic>
+      <div>
+        <template-pic
+          img="https://media.giphy.com/media/s2qXK8wAvkHTO/giphy.gif"
+          caption="Party!">
+        </template-pic>
+      <div>
+
+      <div>
+        <template-github-card
+          profile="https://api.github.com/users/robreczarek">
+        </template-github-card>
+      <div>
     </div>
   </body>
 </html>
