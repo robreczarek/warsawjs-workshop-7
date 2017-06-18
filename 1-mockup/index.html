@@ -9,8 +9,20 @@
     <link rel="stylesheet" href="./main.css">
   </head>
   <body>
-    <!-- http://obreczarek.com/misc/woof.jpg -->
-    <template>
+    <div id="container">
+
+      <template-pic
+        img="http://obreczarek.com/misc/woof.jpg"
+        caption="Woof!">
+      </template-pic>
+
+      <template-pic
+        img="https://media.giphy.com/media/s2qXK8wAvkHTO/giphy.gif"
+        caption="Party!">
+      </template-pic>
+
+    </div>
+    <template id="template-pic">
       <div>
         <img src="" />
         <h1></h1>
