@@ -6,42 +6,22 @@
     <title>WarsawJS Worksop</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
   </head>
   <body>
-    <img src="http://obreczarek.com/misc/woof.jpg" />
+    <link rel="import" href="./1-mockup/index.html">
+    <div id="container">
+      <template-pic
+        img="http://obreczarek.com/misc/woof.jpg"
+        caption="Woof!"
+        width="512"
+        height="385">
+      </template-pic>
 
-    <h1>WarsawJS Worksop</h1>
-
-    <tshirt-component></tshirt-component>
-
-    <template>
-      <h1></h1>
-      <img src="" alt="" />
-    </template>
-
-    <div>
-
+      <template-pic
+        img="https://media.giphy.com/media/s2qXK8wAvkHTO/giphy.gif"
+        caption="Party!">
+      </template-pic>
     </div>
   </body>
-  <script>
-    let $h1 = document.querySelector('h1');
-    let shadow = $h1.attachShadow({ mode: 'open'});
-    console.log(shadow);
-  </script>
-
-  <script>
-    class TshirtComponent extends HTMLElement {
-      constructor() {
-        super();
-        console.log('TshirtComponent is ready to rock!')
-      }
-    }
-    window.customElements.define('tshirt-component', TshirtComponent);
-  </script>
-
-  <script>
-    let a = document.createDocumentFragment();
-    console.log(a);
-    document.querySelector('div').appendChild(a);
-  </script>
 </html>

@@ -1,5 +1,3 @@
-let $container = document.querySelector('#container');
-
 class TemplatePic extends HTMLElement {
   constructor() {
     super();
@@ -10,7 +8,7 @@ class TemplatePic extends HTMLElement {
   connectedCallback() {
     console.log('Ready to woof!');
     // Template handling
-    this.$template_selector = document.querySelector('#template-pic');
+    this.$template_selector = document.currentScript.ownerDocument.querySelector('#template-pic');
     this.$template = this.$template_selector.innerHTML;
     this.shadow.innerHTML = this.$template;
 
