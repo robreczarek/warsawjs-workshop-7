@@ -1,12 +1,10 @@
 class TemplatePic extends HTMLElement {
   constructor() {
     super();
-    console.log('Woof constructed.');
     this.shadow = this.attachShadow({ mode: 'open' });
   }
 
   connectedCallback() {
-    console.log('Ready to woof!');
     // Template handling
     this.$template_selector = document.currentScript.ownerDocument.querySelector('#template-pic');
     this.$template = this.$template_selector.innerHTML;

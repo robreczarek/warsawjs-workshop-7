@@ -1,12 +1,11 @@
 :host #wrapper {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
 }
 :host #pic {
   grid-row: 1;
   grid-column: 1;
+  height: 200px;
+  width: 200px;
 }
 :host #description {
   grid-row: 1;
