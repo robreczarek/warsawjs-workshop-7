@@ -1,0 +1,32 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>WarsawJS Worksop</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <img src="http://obreczarek.com/misc/woof.jpg" />
+
+    <h1>WarsawJS Worksop</h1>
+
+    <tshirt-component></tshirt-component>
+  </body>
+  <script>
+    let $h1 = document.querySelector('h1');
+    let shadow = $h1.attachShadow({ mode: 'open'});
+    console.log(shadow);
+  </script>
+
+  <script>
+    class TshirtComponent extends HTMLElement {
+      constructor() {
+        super();
+        console.log('TshirtComponent is ready to rock!')
+      }
+    }
+    window.customElements.define('tshirt-component', TshirtComponent);
+  </script>
+</html>
